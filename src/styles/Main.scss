@@ -2,6 +2,9 @@
 
 :root {
 	--primary-color: #047aed;
+	--secondary-color: #1c3fa8;
+	--dark-color: #002240;
+	--light-color: #f4f4f4;
 }
 
 * {
@@ -82,6 +85,50 @@ img {
 
 .btn:hover {
 	transform: scale(0.95);
+}
+
+.text-center {
+	text-align: center;
+}
+
+//!   Backgrounds and colored buttons
+.bg-primary,
+.btn-primary {
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+	background-color: var(--dark-color);
+	color: #fff;
+}
+
+.bg-light,
+.btn-light {
+	background-color: var(--light-color);
+	color: #333;
+}
+
+//!   Text Sizes
+.lead {
+	font-size: 20px;
+}
+
+.sm {
+	font-size: 1rem;
+}
+
+.md {
+	font-size: 2rem;
+}
+
+.lg {
+	font-size: 3rem;
+}
+
+.xl {
+	font-size: 4rem;
 }
 
 //!   Stats Styles
@@ -194,6 +241,31 @@ img {
 .cli .grid > *:first-child {
 	grid-column: 1 / span 2;
 	grid-row: 1 / span 2;
+}
+
+//! Cloud Styles
+.cloud .grid {
+	grid-template-columns: 4fr 3fr;
+}
+
+//!   Languages
+.languages .card {
+	text-align: center;
+	margin: 18px 10px 40px;
+	transition: transform 0.2s ease-in;
+
+	h4 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+}
+
+.languages .card:hover {
+	transform: translateY(-15px);
+}
+
+.languages .flex {
+	flex-wrap: wrap;
 }
 
 @import './nav_styles';
