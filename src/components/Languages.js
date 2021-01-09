@@ -16,27 +16,27 @@ const Languages = () => {
 					<h4>Node.js</h4>
 					<img src={node_pic} alt='node logo' />
 				</div>
-				<div class='card'>
+				<div className='card'>
 					<h4>Python</h4>
 					<img src={python_pic} alt='' />
 				</div>
-				<div class='card'>
+				<div className='card'>
 					<h4>C#</h4>
 					<img src={csharp_pic} alt='' />
 				</div>
-				<div class='card'>
+				<div className='card'>
 					<h4>Ruby</h4>
 					<img src={ruby_pic} alt='' />
 				</div>
-				<div class='card'>
+				<div className='card'>
 					<h4>PHP</h4>
 					<img src={php_pic} alt='' />
 				</div>
-				<div class='card'>
+				<div className='card'>
 					<h4>Scala</h4>
 					<img src={scala_pic} alt='' />
 				</div>
-				<div class='card'>
+				<div className='card'>
 					<h4>Clojure</h4>
 					<img src={clojure_pic} alt='' />
 				</div>
