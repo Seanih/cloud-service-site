@@ -1,22 +1,19 @@
 import './styles/Main.scss';
-import Nav from './components/Nav';
-import Showcase from './components/Showcase';
-import Stats from './components/Stats';
-import Cli from './components/Cli';
-import Cloud from './components/Cloud';
-import Languages from './components/Languages';
-import FooterArea from './components/FooterArea';
+import Home from './pages/Home';
+import SignUp from './pages/SignUp';
+import Docs from './pages/Docs';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
 	return (
 		<div className='App'>
-			<Nav />
-			<Showcase />
-			<Stats />
-			<Cli />
-			<Cloud />
-			<Languages />
-			<FooterArea />
+			<Router>
+				<Switch>
+					<Route path='/' exact component={Home} />
+					<Route path='/signup' component={SignUp} />
+					<Route path='/docs' component={Docs} />
+				</Switch>
+			</Router>
 		</div>
 	);
 }
