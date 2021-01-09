@@ -1,19 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FooterArea from '../components/FooterArea';
 import Nav from '../components/Nav';
-import styled from 'styled-components';
-
-const Container = styled.div`
-	height: 100vh;
-`;
+import ShowcaseCard from '../components/ShowcaseCard';
+import sunset from '../images/sunset.jpg';
 
 const SignUp = () => {
+	const [submitForm, setSubmitForm] = useState(false);
+
+	const submitted = () => {
+		setSubmitForm(true);
+		console.log('button clicked');
+	};
+
 	return (
-		<Container>
+		<>
 			<Nav />
-			sign up
+			<div
+				style={{
+					height: '65vh',
+					display: 'flex',
+					justifyContent: 'center',
+					alignItems: 'center',
+					background: `url(${sunset})`,
+				}}
+			>
+				<ShowcaseCard clicked={submitted} />
+			</div>
 			<FooterArea />
-		</Container>
+		</>
 	);
 };
 

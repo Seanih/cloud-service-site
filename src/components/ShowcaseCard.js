@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ShowcaseCard = () => {
+const ShowcaseCard = ({ clicked }) => {
 	return (
 		<div className='showcase-form card'>
 			<h2>Request A Demo</h2>
@@ -19,7 +19,12 @@ const ShowcaseCard = () => {
 				<div className='form-control'>
 					<input type='email' name='email' placeholder='Email' required />
 				</div>
-				<input type='submit' value='Send' className='btn btn-primary' />
+				<input
+					type='submit'
+					value='Send'
+					className='btn btn-primary'
+					onClick={clicked}
+				/>
 			</form>
 		</div>
 	);
