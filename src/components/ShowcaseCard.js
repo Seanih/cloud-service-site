@@ -2,10 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const ShowcaseCard = ({ doneSubmitting }) => {
-	// const checkFields = event => {
-	// 	alert('Thanks for signing up! Please check your email for instructions.');
-	// };
-
 	return (
 		<motion.div
 			className='showcase-form card'
