@@ -8,11 +8,21 @@ const Showcase = () => {
 		hidden: { opacity: 0, x: 100 },
 		visible: { opacity: 1, x: 0 },
 	};
+	const slideRight = {
+		hidden: { opacity: 0, x: -100 },
+		visible: { opacity: 1, x: 0 },
+	};
 
 	return (
 		<div className='showcase'>
 			<div className='container grid'>
-				<div className='showcase-text'>
+				<motion.div
+					className='showcase-text'
+					variants={slideRight}
+					initial='hidden'
+					animate='visible'
+					transition={{ duration: 0.5 }}
+				>
 					<h1>Easier Deployment</h1>
 					<p>
 						Deploy web apps of all kinds, from large scale enterprise APIs to
@@ -22,7 +32,7 @@ const Showcase = () => {
 					<Link className='btn btn-outline' to='/signup'>
 						Sign Up
 					</Link>
-				</div>
+				</motion.div>
 				<motion.img
 					src={computer}
 					alt='computer'
