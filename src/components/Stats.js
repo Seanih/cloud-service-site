@@ -4,7 +4,7 @@ const Stats = () => {
 	return (
 		<section className='stats'>
 			<div className='container'>
-				<h3 className='stats-heading text-center my-1'>
+				<h3 className='my-1' style={{ textAlign: 'center' }}>
 					Welcome to the best platform for building applications of all types
 					with modern architecture and scaling
 				</h3>
