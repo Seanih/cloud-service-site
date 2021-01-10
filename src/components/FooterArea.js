@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FooterArea = () => {
 	return (
-		<footer className='footer bg-dark py-5'>
+		<footer className='footer bg-dark py-2'>
 			<div className='container grid grid-3'>
 				<div>
 					<h1>Cold Clouds</h1>
