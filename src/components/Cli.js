@@ -5,7 +5,7 @@ const Cli = () => {
 	return (
 		<section className='cli'>
 			<div className='container grid'>
-				<img src={cli_pic} alt='WTF' />
+				<img src={cli_pic} alt='cli' />
 				<div className='card'>
 					<h3>Easy to use, cross-platform CLI</h3>
 				</div>
