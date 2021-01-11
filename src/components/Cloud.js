@@ -1,5 +1,6 @@
 import React from 'react';
 import cloud_image from '../images/cloud.png';
+import { Link } from 'react-router-dom';
 
 const Cloud = () => {
 	return (
@@ -8,9 +9,9 @@ const Cloud = () => {
 				<div className='text-center'>
 					<h2 className='lg'>Cloud Hosting</h2>
 					<p className='lead my-1'>Cloud hosting that's best in class</p>
-					<a href='features.html' className='btn btn-dark'>
+					<Link to='/features' className='btn btn-dark'>
 						Read More
-					</a>
+					</Link>
 				</div>
 				<img src={cloud_image} alt='cloud' />
 			</div>

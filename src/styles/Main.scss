@@ -382,6 +382,17 @@ img {
 	flex-wrap: wrap;
 }
 
+//! 	Features Styles
+.features-head img {
+	width: 200px;
+	justify-self: flex-end;
+}
+
+.features-sub-head img {
+	width: 300px;
+	justify-self: flex-end;
+}
+
 //!		Footer Styles
 .footer .social a {
 	margin: 0 10px;
@@ -410,9 +421,9 @@ img {
 	.cli .grid > *:first-child {
 		grid-column: 1;
 		grid-row: 1;
-
 	}
 }
+
 @media (max-width: 500px) {
 	.navbar {
 		height: 90px;
