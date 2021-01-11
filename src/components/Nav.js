@@ -15,7 +15,10 @@ const Nav = () => {
 							<Link to='/features'>Features</Link>
 						</li>
 						<li>
-							<Link to='/signup'>Sign Up</Link>
+							<Link to='/signup'>Join</Link>
+						</li>
+						<li>
+							<Link to='/docs'>Docs</Link>
 						</li>
 					</ul>
 				</nav>
