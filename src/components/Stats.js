@@ -12,17 +12,17 @@ const Stats = () => {
 				<div className='grid grid-3 text-center my-4'>
 					<div>
 						<i className='fas fa-server fa-3x'></i>
-						<h3>349,405</h3>
+						<h3>10,349,405</h3>
 						<p className='text-secondary'>Deployments</p>
 					</div>
 					<div>
 						<i className='fas fa-upload fa-3x'></i>
-						<h3>587 TB</h3>
+						<h3>980+ TB</h3>
 						<p className='text-secondary'>Published</p>
 					</div>
 					<div>
 						<i className='fas fa-project-diagram fa-3x'></i>
-						<h3>323,285</h3>
+						<h3>3,323,285</h3>
 						<p className='text-secondary'>Projects</p>
 					</div>
 				</div>

@@ -387,7 +387,31 @@ img {
 	margin: 0 10px;
 }
 
+//!		Media Queries
 @media (max-width: 768px) {
+	.grid,
+	.showcase .grid,
+	.stats .grid,
+	.cli .grid,
+	.cloud .grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.showcase {
+		height: auto;
+	}
+
+	.showcase-text {
+		text-align: center;
+		margin-top: 40px;
+	}
+
+	.cli .grid > *:first-child {
+		grid-column: 1;
+		grid-row: 1;
+
+	}
 }
 @media (max-width: 500px) {
 	.navbar {

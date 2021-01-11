@@ -16,21 +16,24 @@ const FooterArea = () => {
 							<Link to='/'>Home</Link>
 						</li>
 						<li>
+							<Link to='/features'>Features</Link>
+						</li>
+						<li>
 							<Link to='/signup'>Sign Up</Link>
 						</li>
 					</ul>
 				</nav>
 				<div className='social'>
-					<a href='random.html'>
+					<a href='https://www.github.com' target='_blank' rel='noreferrer'>
 						<i className='fab fa-github fa-2x'></i>
 					</a>
-					<a href='random.html'>
+					<a href='https://www.facebook.com' target='_blank' rel='noreferrer'>
 						<i className='fab fa-facebook fa-2x'></i>
 					</a>
-					<a href='random.html'>
+					<a href='https://www.instagram.com' target='_blank' rel='noreferrer'>
 						<i className='fab fa-instagram fa-2x'></i>
 					</a>
-					<a href='random.html'>
+					<a href='https://www.twitter.com' target='_blank' rel='noreferrer'>
 						<i className='fab fa-twitter fa-2x'></i>
 					</a>
 				</div>
