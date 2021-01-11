@@ -2,6 +2,8 @@ import React from 'react';
 import docsPic from '../images/docs.png';
 
 const DocsBody = () => {
+	const fakeLink = { link: '#' };
+
 	return (
 		<div>
 			<section className='docs-head bg-primary py-3'>
@@ -23,16 +25,15 @@ const DocsBody = () => {
 						<nav>
 							<ul>
 								<li>
-									{/* ---Left achor tag errors since links are just for demo purposes--- */}
-									<a className='text-primary' href='#'>
+									<a className='text-primary' href={fakeLink.link}>
 										Introduction
 									</a>
 								</li>
 								<li>
-									<a href='#'>About Cold Clouds</a>
+									<a href={fakeLink.link}>About Cold Clouds</a>
 								</li>
 								<li>
-									<a href='#'>Installation</a>
+									<a href={fakeLink.link}>Installation</a>
 								</li>
 							</ul>
 						</nav>
@@ -41,16 +42,16 @@ const DocsBody = () => {
 						<nav>
 							<ul>
 								<li>
-									<a href='#'>Setting up a container</a>
+									<a href={fakeLink.link}>Setting up a container</a>
 								</li>
 								<li>
-									<a href='#'>Using the CLI</a>
+									<a href={fakeLink.link}>Using the CLI</a>
 								</li>
 								<li>
-									<a href='#'>Managing resources</a>
+									<a href={fakeLink.link}>Managing resources</a>
 								</li>
 								<li>
-									<a href='#'>Upgrade & downgrade</a>
+									<a href={fakeLink.link}>Upgrade & downgrade</a>
 								</li>
 							</ul>
 						</nav>
@@ -74,7 +75,7 @@ const DocsBody = () => {
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
 							totam magni eius vitae velit id, atque veritatis! At, vero porro.
 						</p>
-						<a href='#' className='btn btn-primary'>
+						<a href={fakeLink.link} className='btn btn-primary'>
 							Install CLI
 						</a>
 
